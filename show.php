@@ -1,18 +1,10 @@
 <?php 
 
-    require("token.php");
-
     $full_name = trim($_GET["full_name"]);
 
-    $headers = [
-        "User-Agent: Example REST curl",
-        "Authorization: token {$token}"//your token here
-    ];
+    $ch = require "initcurl.php";
 
-    $ch = curl_init("https://api.github.com/repos/$full_name");
-
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //makes the curl return a string json
+    curl_setopt($ch, CURLOPT_URL, "https://api.github.com/repos/$full_name");
 
     $response = curl_exec($ch);
 
