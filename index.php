@@ -12,14 +12,8 @@
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example REST API Client</title>
-</head>
-<body>
+
+<?php require "header.html" ?>
     <h1>Repositories</h1>
     <table>
         <thead>
@@ -44,5 +38,7 @@
 
         </tbody>
     </table>
-</body>
-</html>
+
+    <a href="new.php">New</a>
+
+<?php require("footer.html") ?>
