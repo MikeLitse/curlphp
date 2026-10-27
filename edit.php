@@ -16,17 +16,22 @@
 
 <?php require("header.html") ?>
         <h1>Repository</h1>
+        
+        
     
-        <form method="POST" action="create.php">
+        <form method="POST" action="update.php">
+
+            <input type="hidden" name="full_name" value="<?= $data["full_name"] ?>">
+
             <label for="name">Name</label>
             <input type="text" name="name" id="name" value="<?= $data["name"] ?>">
 
             <label for="description">Description</label>
             <textarea name="description" id="description">
-                <?= $data["description"] ?>
+                <?= htmlspecialchars($data["description"]) ?>
             </textarea>
 
-            <button>Submit</button>
+            <button>Edit</button>
         </form>
    
     
