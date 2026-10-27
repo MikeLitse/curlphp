@@ -14,22 +14,16 @@
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example REST API Client</title>
-</head>
-<body>
-    <h1>Repository</h1>
+<?php require("header.html") ?>
+        <h1>Repository</h1>
     
-    <dl>
-        <dt>Name</dt>
-        <dd><?= $data["name"] ?></dd>
-        <dt>Description</dt>
-        <dd><?= htmlspecialchars($data["description"]) ?></dd>
-    </dl>
-
+        <dl>
+            <dt>Name</dt>
+            <dd><?= $data["name"] ?></dd>
+            <dt>Description</dt>
+            <dd><?= htmlspecialchars($data["description"]) ?></dd>
+        </dl>
+    </main>
+    
 </body>
 </html>
