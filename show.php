@@ -23,7 +23,8 @@
             <dt>Description</dt>
             <dd><?= htmlspecialchars($data["description"]) ?></dd>
         </dl>
-    </main>
+
+        <a href="edit.php?full_name= <?= $data["full_name"] ?> ">Edit</a>
+   
     
-</body>
-</html>
+<?php require("footer.html") ?>

@@ -4,15 +4,15 @@
 
     <h1>New Repository</h1>
 
-    <form method="POST">
+    <form method="POST" action="create.php">
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
 
         <label for="description">Description</label>
         <textarea name="description" id="description"></textarea>
-    </form>
 
-    <button>Submit</button>
+        <button>Submit</button>
+    </form>
 
 <?php 
     require "footer.html"
