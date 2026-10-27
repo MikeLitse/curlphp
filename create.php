@@ -34,7 +34,7 @@
     <h1>New Repository</h1>
 
     <p>Repository created successfully
-        <a href="show.php?full_name <?= $data["full_name"] ?>">Show</a>
+        <a href="show.php?full_name=<?= $data["full_name"] ?>">Show</a>
     </p>
 
 <?php require "footer.html" ?>

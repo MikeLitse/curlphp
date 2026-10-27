@@ -25,6 +25,12 @@
         </dl>
 
         <a href="edit.php?full_name= <?= $data["full_name"] ?> ">Edit</a>
+
+        <form method="post" action="delete.php">
+
+            <input type="hidden" name="full_name" value="<?= $data["full_name"] ?>">
+            <button>Delete</button>
+
+        </form>
    
-    
 <?php require("footer.html") ?>
