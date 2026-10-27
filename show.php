@@ -2,11 +2,11 @@
 
     require("token.php");
 
-    $full_name = $_GET["full_name"];
+    $full_name = trim($_GET["full_name"]);
 
     $headers = [
         "User-Agent: Example REST curl",
-        "Authorization: token {$token}"
+        "Authorization: token {$token}"//your token here
     ];
 
     $ch = curl_init("https://api.github.com/repos/$full_name");
